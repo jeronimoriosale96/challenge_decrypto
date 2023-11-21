@@ -1,0 +1,40 @@
+.card {
+    background-color: #262626;
+    border-radius: 18px;
+    color: #fff;
+    height: 100%;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .name {
+        font-size: 18px;
+        font-weight: 500;
+        color: #1ce8f7;
+    }
+
+    .percentage {
+        font-weight: 500;
+        color: #000;
+        padding: 3px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        width: fit-content;
+        &.negative {
+            background-color: #ff4d6d;
+        }
+        &.positive {
+            background-color: #07f2c7;
+        }
+        &.normal {
+            background-color: #ababab;
+        }
+    }
+    .time {
+        color: #5f5f5f;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .price {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}

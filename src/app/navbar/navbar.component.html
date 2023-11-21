@@ -1,0 +1,11 @@
+<nav class="navbar">
+  <div class="container d-flex justify-content-center">
+    <div class="logo">
+      <img
+        src="../../assets/images/decrypto-logo.svg"
+        alt="decrypto logo"
+      />
+    </div>
+  </div>
+  <mat-progress-bar *ngIf="isLoading$ | async" class="loading" mode="indeterminate"></mat-progress-bar>
+</nav>

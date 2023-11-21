@@ -1,0 +1,34 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #232323;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 1;
+    height: 65px;
+
+    .logo img {
+        width: 200px;
+    }
+
+    .loading {
+        position: absolute;
+        bottom: 0;
+        background-color: #1ce8f7;
+        border-color: #1ce8f7;
+        .mat-mdc-progress-bar {
+            --mdc-linear-progress-active-indicator-color: #1ce8f7 !important;
+            --mdc-linear-progress-track-color: #1ce8f7!important;
+        }
+    }
+}
+
+::ng-deep{
+    mat-progress-bar {
+        .mdc-linear-progress__bar {
+            --mdc-linear-progress-active-indicator-color: #1ce8f7 !important;
+        }
+    }
+}
